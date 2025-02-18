@@ -309,6 +309,17 @@
             opacity: 1;
         }
 
+        .frames-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
         /* Footer */
         footer {
             background: #2d3436;
@@ -344,6 +355,7 @@
                 <li><a href="#form"><i class="fas fa-edit"></i> Form</a></li>
                 <li><a href="#stats"><i class="fas fa-chart-bar"></i> Stats</a></li>
                 <li><a href="#gallery"><i class="fas fa-image"></i> Gallery</a></li>
+                <li><a href="#frames"><i class="fas fa-tv"></i> Frames</a></li>
                 
             </ul>
         </div>
@@ -522,6 +534,22 @@
                     <img src="Data.jpg" alt="Data Analytics">
                     <div class="image-caption">Data Analytics</div>
                 </div>
+            </div>
+        </section>
+
+        <!--Frames-->
+        <section id="frames" class="section">
+            <h1>Interactive Frames</h1>
+            <div class="frames-container">
+                <!-- Example: Embedded YouTube Video -->
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="Embedded Video" frameborder="0" allowfullscreen>
+                </iframe>
+        
+                <!-- Example: Embedded External Website -->
+                <iframe width="100%" height="400" src="https://677cffba31587f2f14a3dfb2--lenshub20.netlify.app/" 
+                        title="Embedded Website" frameborder="0">
+                </iframe>
             </div>
         </section>
     </div>
